@@ -35,25 +35,42 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-Console.WriteLine("Введите три числа");
+// Console.WriteLine("Введите три числа");
 
-int a = Convert.ToInt32(Console.ReadLine());
-int b = Convert.ToInt32(Console.ReadLine());
-int c = Convert.ToInt32(Console.ReadLine());
+// int a = Convert.ToInt32(Console.ReadLine());
+// int b = Convert.ToInt32(Console.ReadLine());
+// int c = Convert.ToInt32(Console.ReadLine());
 
-int max = a;
-if((b==max)&&(c==max))
+// int max = a;
+// if((b==max)&&(c==max))
+// {
+//     Console.WriteLine("Эти числа равны");
+// }
+// if(b > max)
+// {
+//     max = b;
+// }
+// if(c > max)
+// {
+//         max = c;
+// }
+
+// Console.WriteLine(max+" наибольшее число");
+
+// Задача 6: Напишите программу, которая 
+// на вход принимает число и выдаёт, 
+// является ли число чётным 
+// (делится ли оно на два без остатка).
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+Console.WriteLine("Введите число");
+int num = Convert.ToInt32(Console.ReadLine());
+int num1 = num % 2;
+if(num1 == 0)
 {
-    Console.WriteLine("Эти числа равны");
+    Console.WriteLine("ДА");
 }
-if(b > max)
-{
-    max = b;
-}
-if(c > max)
-{
-        max = c;
-}
-
-Console.WriteLine(max+" наибольшее число");
-
+else
+    Console.WriteLine("Нет");
