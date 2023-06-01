@@ -11,22 +11,18 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите число");
 int num2 = Convert.ToInt32(Console.ReadLine());
+
 int max = 0;
-else if(num1 > num2) max = num1;
-{
-    Console.WriteLine(num1+">"+num2);
+
+if (num1 > num2){
+    max = num1;
+    Console.WriteLine(num1+" > "+num2);
     Console.WriteLine("max = "+max);
 }
-else if(num2 > num1) max = num2;
-{
-    Console.WriteLine(num2+">"+num1);
-    Console.WriteLine("max = "+max);
+else if(num2 > num1){
+        max = num2;
+        Console.WriteLine(num2+" > "+num1);
+        Console.WriteLine("max = "+max);
 }
-    
-
-
-
-if(num1 == num2)
-{
-    Console.WriteLine("Эти числа равны");
-}
+else if(num1 == num2)
+        Console.WriteLine("Эти числа равны");
